@@ -115,8 +115,6 @@ class ContactsController extends Controller
      */
     public function actionDestroy()
     {
-
-        var_dump( Yii::app()->user->checkAccess('USER') );
         $params = $this->parseJSONRequest();
 
         if ( empty($params['id']) ) {
