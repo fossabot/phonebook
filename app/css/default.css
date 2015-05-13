@@ -1,0 +1,6 @@
+.x-action-col-glyph {font-size:16px; line-height:16px; color:#AEAEAE; width:20px; padding-left: 5px}
+.x-action-col-glyph:hover{color:#777777}
+
+.x-btn-icon-el-default-toolbar-small.x-btn-glyph {
+    opacity: 0.8 !important;
+}

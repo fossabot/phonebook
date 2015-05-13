@@ -1,0 +1,327 @@
+2015/05/08 16:38:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://phonebook.ichirkin.ru/contacts/items
+---
+2015/05/09 05:43:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "phonebook/items".' in /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(141): CWebApplication->runController('phonebook/items')
+#1 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/phonebook/items?_dc=1431135781665&id=268
+HTTP_REFERER=http://phonebook.ichirkin.ru/
+---
+2015/05/09 05:53:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "phonebook/items".' in /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(141): CWebApplication->runController('phonebook/items')
+#1 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/phonebook/items?_dc=1431136421382&page=1&start=0&limit=25
+HTTP_REFERER=http://phonebook.ichirkin.ru/
+---
+2015/05/09 05:53:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "phonebook/items".' in /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(141): CWebApplication->runController('phonebook/items')
+#1 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/phonebook/items?_dc=1431136421382&page=1&start=0&limit=25
+---
+2015/05/09 05:53:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "phonebook/css/default.css".' in /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(141): CWebApplication->runController('phonebook/css/d...')
+#1 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/phonebook/css/default.css
+HTTP_REFERER=http://phonebook.ichirkin.ru/phonebook/items?_dc=1431136421382&page=1&start=0&limit=25
+---
+2015/05/09 05:53:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "phonebook/bootstrap.js".' in /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(141): CWebApplication->runController('phonebook/boots...')
+#1 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/phonebook/bootstrap.js
+HTTP_REFERER=http://phonebook.ichirkin.ru/phonebook/items?_dc=1431136421382&page=1&start=0&limit=25
+---
+2015/05/09 05:56:34 [error] [php] Cannot modify header information - headers already sent by (output started at /var/www/admin/data/www/ichirkin.ru/phonebook/app/protected/controllers/ContactsController.php:13) (/var/www/admin/data/www/ichirkin.ru/phonebook/app/protected/components/Controller.php:32)
+Stack trace:
+#0 unknown(0): ContactsController->actionItems()
+#1 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CController.php(286): ContactsController->runAction()
+#5 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CController.php(265): ContactsController->runActionWithFilters()
+#6 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(282): ContactsController->run()
+#7 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/contacts/items?_dc=1431136502287&id=1
+in /var/www/admin/data/www/ichirkin.ru/phonebook/app/protected/components/Controller.php (32)
+in /var/www/admin/data/www/ichirkin.ru/phonebook/app/protected/controllers/ContactsController.php (18)
+in /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php (13)
+2015/05/09 05:56:40 [error] [php] Cannot modify header information - headers already sent by (output started at /var/www/admin/data/www/ichirkin.ru/phonebook/app/protected/controllers/ContactsController.php:13) (/var/www/admin/data/www/ichirkin.ru/phonebook/app/protected/components/Controller.php:32)
+Stack trace:
+#0 unknown(0): ContactsController->actionItems()
+#1 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/actions/CAction.php(108): ReflectionMethod->invokeArgs()
+#2 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/actions/CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#3 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CController.php(308): CInlineAction->runWithParams()
+#4 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CController.php(286): ContactsController->runAction()
+#5 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CController.php(265): ContactsController->runActionWithFilters()
+#6 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(282): ContactsController->run()
+#7 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(141): CWebApplication->runController()
+#8 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/base/CApplication.php(180): CWebApplication->processRequest()
+#9 /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php(13): CWebApplication->run()
+REQUEST_URI=/contacts/items?_dc=1431136502287&id=1
+in /var/www/admin/data/www/ichirkin.ru/phonebook/app/protected/components/Controller.php (32)
+in /var/www/admin/data/www/ichirkin.ru/phonebook/app/protected/controllers/ContactsController.php (18)
+in /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php (13)
+2015/05/09 06:06:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "phonebook/items".' in /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(141): CWebApplication->runController('phonebook/items')
+#1 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/phonebook/items?_dc=1431136421382&page=1&start=0&limit=25
+---
+2015/05/09 06:06:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "phonebook/css/default.css".' in /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(141): CWebApplication->runController('phonebook/css/d...')
+#1 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/phonebook/css/default.css
+HTTP_REFERER=http://phonebook.ichirkin.ru/phonebook/items?_dc=1431136421382&page=1&start=0&limit=25
+---
+2015/05/09 06:06:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "phonebook/bootstrap.js".' in /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(141): CWebApplication->runController('phonebook/boots...')
+#1 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/phonebook/bootstrap.js
+HTTP_REFERER=http://phonebook.ichirkin.ru/phonebook/items?_dc=1431136421382&page=1&start=0&limit=25
+---
+2015/05/09 06:06:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "phonebook/items".' in /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(141): CWebApplication->runController('phonebook/items')
+#1 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/phonebook/items?_dc=1431136421382&page=1&start=0&limit=25
+---
+2015/05/09 06:06:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "phonebook/bootstrap.js".' in /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(141): CWebApplication->runController('phonebook/boots...')
+#1 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/phonebook/bootstrap.js
+HTTP_REFERER=http://phonebook.ichirkin.ru/phonebook/items?_dc=1431136421382&page=1&start=0&limit=25
+---
+2015/05/09 06:06:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "phonebook/css/default.css".' in /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(141): CWebApplication->runController('phonebook/css/d...')
+#1 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/phonebook/css/default.css
+HTTP_REFERER=http://phonebook.ichirkin.ru/phonebook/items?_dc=1431136421382&page=1&start=0&limit=25
+---
+2015/05/09 06:15:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "phonebook/items".' in /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(141): CWebApplication->runController('phonebook/items')
+#1 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/phonebook/items?_dc=1431136421382&page=1&start=0&limit=25
+---
+2015/05/09 06:15:14 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "ContactGroup" is not defined in active record class "Contact".' in /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveFinder.php:226
+Stack trace:
+#0 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveFinder.php(296): CActiveFinder->buildJoinTree(Object(CJoinElement), 'ContactGroup')
+#1 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveRecord.php(909): CActiveFinder->__construct(Object(Contact), Array)
+#3 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveRecord.php(1355): CActiveRecord->getActiveFinder(Array)
+#4 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#5 /var/www/admin/data/www/ichirkin.ru/phonebook/app/protected/controllers/ContactsController.php(32): CActiveRecord->findAll(Object(CDbCriteria))
+#6 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/actions/CInlineAction.php(49): ContactsController->actionItems()
+#7 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(282): CController->run('items')
+#11 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(141): CWebApplication->runController('contacts/items')
+#12 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/contacts/items?_dc=1431136502287&id=2
+---
+2015/05/09 06:15:30 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "ContactGroup" is not defined in active record class "Contact".' in /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveFinder.php:226
+Stack trace:
+#0 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveFinder.php(296): CActiveFinder->buildJoinTree(Object(CJoinElement), 'ContactGroup')
+#1 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveRecord.php(909): CActiveFinder->__construct(Object(Contact), Array)
+#3 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveRecord.php(1355): CActiveRecord->getActiveFinder(Array)
+#4 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#5 /var/www/admin/data/www/ichirkin.ru/phonebook/app/protected/controllers/ContactsController.php(32): CActiveRecord->findAll(Object(CDbCriteria))
+#6 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/actions/CInlineAction.php(49): ContactsController->actionItems()
+#7 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(282): CController->run('items')
+#11 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(141): CWebApplication->runController('contacts/items')
+#12 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/contacts/items?_dc=1431136502287&id=2
+---
+2015/05/09 06:15:32 [error] [exception.CDbException] exception 'CDbException' with message 'Relation "ContactGroup" is not defined in active record class "Contact".' in /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveFinder.php:226
+Stack trace:
+#0 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveFinder.php(296): CActiveFinder->buildJoinTree(Object(CJoinElement), 'ContactGroup')
+#1 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveFinder.php(48): CActiveFinder->buildJoinTree(Object(CJoinElement), Array)
+#2 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveRecord.php(909): CActiveFinder->__construct(Object(Contact), Array)
+#3 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveRecord.php(1355): CActiveRecord->getActiveFinder(Array)
+#4 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#5 /var/www/admin/data/www/ichirkin.ru/phonebook/app/protected/controllers/ContactsController.php(32): CActiveRecord->findAll(Object(CDbCriteria))
+#6 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/actions/CInlineAction.php(49): ContactsController->actionItems()
+#7 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(282): CController->run('items')
+#11 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(141): CWebApplication->runController('contacts/items')
+#12 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/contacts/items?_dc=1431136502287&id=2
+---
+2015/05/09 06:15:33 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`group_id` AS `t0_c1`, `t`.`firstname` AS `t0_c2`, `t`.`lastname` AS `t0_c3`, `t`.`phone` AS `t0_c4`, `t`.`company` AS `t0_c5`, `t`.`description` AS `t0_c6`, `t`.`date_added` AS `t0_c7`, `group`.`id` AS `t1_c0`, `group`.`title` AS `t1_c1` FROM `phonebook_contacts` `t`  LEFT OUTER JOIN `phonebook_contact_groups` `group` ON (`t`.`group_id`=`group`.`id`)  WHERE (id=:ycp0). Bound with :ycp0='2'.
+in /var/www/admin/data/www/ichirkin.ru/phonebook/app/protected/controllers/ContactsController.php (32)
+in /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php (13)
+2015/05/09 06:15:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`group_id` AS `t0_c1`, `t`.`firstname` AS `t0_c2`, `t`.`lastname` AS `t0_c3`, `t`.`phone` AS `t0_c4`, `t`.`company` AS `t0_c5`, `t`.`description` AS `t0_c6`, `t`.`date_added` AS `t0_c7`, `group`.`id` AS `t1_c0`, `group`.`title` AS `t1_c1` FROM `phonebook_contacts` `t`  LEFT OUTER JOIN `phonebook_contact_groups` `group` ON (`t`.`group_id`=`group`.`id`)  WHERE (id=:ycp0). Bound with :ycp0='2'' in /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/admin/data/www/ichirkin.ru/phonebook/app/protected/controllers/ContactsController.php(32): CActiveRecord->findAll(Object(CDbCriteria))
+#7 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/actions/CInlineAction.php(49): ContactsController->actionItems()
+#8 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(282): CController->run('items')
+#12 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(141): CWebApplication->runController('contacts/items')
+#13 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/contacts/items?_dc=1431136502287&id=2
+---
+2015/05/09 06:15:52 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`group_id` AS `t0_c1`, `t`.`firstname` AS `t0_c2`, `t`.`lastname` AS `t0_c3`, `t`.`phone` AS `t0_c4`, `t`.`company` AS `t0_c5`, `t`.`description` AS `t0_c6`, `t`.`date_added` AS `t0_c7`, `group`.`id` AS `t1_c0`, `group`.`title` AS `t1_c1` FROM `phonebook_contacts` `t`  LEFT OUTER JOIN `phonebook_contact_groups` `group` ON (`t`.`group_id`=`group`.`id`)  WHERE (id=:ycp0). Bound with :ycp0='2'.
+in /var/www/admin/data/www/ichirkin.ru/phonebook/app/protected/controllers/ContactsController.php (32)
+in /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php (13)
+2015/05/09 06:15:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`group_id` AS `t0_c1`, `t`.`firstname` AS `t0_c2`, `t`.`lastname` AS `t0_c3`, `t`.`phone` AS `t0_c4`, `t`.`company` AS `t0_c5`, `t`.`description` AS `t0_c6`, `t`.`date_added` AS `t0_c7`, `group`.`id` AS `t1_c0`, `group`.`title` AS `t1_c1` FROM `phonebook_contacts` `t`  LEFT OUTER JOIN `phonebook_contact_groups` `group` ON (`t`.`group_id`=`group`.`id`)  WHERE (id=:ycp0). Bound with :ycp0='2'' in /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/admin/data/www/ichirkin.ru/phonebook/app/protected/controllers/ContactsController.php(32): CActiveRecord->findAll(Object(CDbCriteria))
+#7 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/actions/CInlineAction.php(49): ContactsController->actionItems()
+#8 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(282): CController->run('items')
+#12 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(141): CWebApplication->runController('contacts/items')
+#13 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/contacts/items?_dc=1431136502287&id=2
+---
+2015/05/09 06:15:55 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`group_id` AS `t0_c1`, `t`.`firstname` AS `t0_c2`, `t`.`lastname` AS `t0_c3`, `t`.`phone` AS `t0_c4`, `t`.`company` AS `t0_c5`, `t`.`description` AS `t0_c6`, `t`.`date_added` AS `t0_c7`, `group`.`id` AS `t1_c0`, `group`.`title` AS `t1_c1` FROM `phonebook_contacts` `t`  LEFT OUTER JOIN `phonebook_contact_groups` `group` ON (`t`.`group_id`=`group`.`id`)  WHERE (id=:ycp0). Bound with :ycp0='2'.
+in /var/www/admin/data/www/ichirkin.ru/phonebook/app/protected/controllers/ContactsController.php (32)
+in /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php (13)
+2015/05/09 06:15:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous. The SQL statement executed was: SELECT `t`.`id` AS `t0_c0`, `t`.`group_id` AS `t0_c1`, `t`.`firstname` AS `t0_c2`, `t`.`lastname` AS `t0_c3`, `t`.`phone` AS `t0_c4`, `t`.`company` AS `t0_c5`, `t`.`description` AS `t0_c6`, `t`.`date_added` AS `t0_c7`, `group`.`id` AS `t1_c0`, `group`.`title` AS `t1_c1` FROM `phonebook_contacts` `t`  LEFT OUTER JOIN `phonebook_contact_groups` `group` ON (`t`.`group_id`=`group`.`id`)  WHERE (id=:ycp0). Bound with :ycp0='2'' in /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/CDbCommand.php:543
+Stack trace:
+#0 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveFinder.php(803): CDbCommand->queryAll()
+#2 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveFinder.php(437): CJoinElement->runQuery(Object(CJoinQuery))
+#3 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveFinder.php(68): CJoinElement->find(Object(CDbCriteria))
+#4 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveRecord.php(1356): CActiveFinder->query(Object(CDbCriteria), true)
+#5 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/db/ar/CActiveRecord.php(1470): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /var/www/admin/data/www/ichirkin.ru/phonebook/app/protected/controllers/ContactsController.php(32): CActiveRecord->findAll(Object(CDbCriteria))
+#7 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/actions/CInlineAction.php(49): ContactsController->actionItems()
+#8 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(282): CController->run('items')
+#12 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(141): CWebApplication->runController('contacts/items')
+#13 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/base/CApplication.php(180): CWebApplication->processRequest()
+#14 /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/contacts/items?_dc=1431136502287&id=2
+---
+2015/05/09 06:17:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2015/05/09 06:17:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2015/05/09 06:17:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2015/05/09 06:17:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2015/05/09 06:18:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2015/05/09 06:18:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
+2015/05/09 06:18:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site".' in /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php:286
+Stack trace:
+#0 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/web/CWebApplication.php(141): CWebApplication->runController('')
+#1 /var/www/admin/data/www/ichirkin.ru/phonebook/libraries/Yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /var/www/admin/data/www/ichirkin.ru/phonebook/app/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/
+---
