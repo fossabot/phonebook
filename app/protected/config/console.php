@@ -11,9 +11,17 @@ return array(
 
 	// application components
 	'components'=>array(
-		'db'=>array(
-			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
-		),
+        'db'=>array(
+            'class'=>'system.db.CDbConnection',
+            // TODO remove
+            'enableProfiling' => true,
+            'enableParamLogging' => true,
+            'connectionString' => 'mysql:host=localhost;dbname=phonebook',
+            'emulatePrepare' => true,
+            'username' => 'root',
+            'password' => '2231',
+            'charset' => 'utf8',
+        ),
 		// uncomment the following to use a MySQL database
 		/*
 		'db'=>array(
