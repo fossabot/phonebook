@@ -1,5 +1,5 @@
 <script type="application/javascript">
-    var USER = {name: '<?=CHtml::encode(Yii::app()->user->name)?>', group: '<?=CHtml::encode(Yii::app()->user->group)?>'};
+    var USER = {name: '<?=CHtml::encode(Yii::app()->user->name)?>', group: '<?=CHtml::encode(Yii::app()->user->role)?>'};
 </script>
 <script type="text/javascript" src="ext/build/ext-all.js"></script>
 <script type="text/javascript" src="compiled/?g=app"></script>

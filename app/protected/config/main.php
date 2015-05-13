@@ -33,7 +33,7 @@ return array(
 	// application components
 	'components'=>array(
 		'user'=>array(
-			// enable cookie-based authentication
+            'class' => 'WebUser',
 			'allowAutoLogin'=>true,
 		),
 		// uncomment the following to enable URLs in path-format
@@ -49,7 +49,6 @@ return array(
 		),
         'db'=>array(
             'class'=>'system.db.CDbConnection',
-            // TODO remove
             'enableProfiling' => true,
             'enableParamLogging' => true,
             'connectionString' => 'mysql:host=localhost;dbname=phonebook',
@@ -58,16 +57,12 @@ return array(
             'password' => 'QWERTY',
             'charset' => 'utf8',
         ),
-		// uncomment the following to use a MySQL database
-		/*
-		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=testdrive',
-			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => '',
-			'charset' => 'utf8',
-		),
-		*/
+        'authManager' => array(
+            // Будем использовать свой менеджер авторизации
+            'class' => 'PhpAuthManager',
+            // Роль по умолчанию. Все, кто не админы, модераторы и юзеры — гости.
+            'defaultRoles' => array('GUEST'),
+        ),
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
 			'errorAction'=>'site/error',

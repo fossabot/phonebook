@@ -11,7 +11,7 @@ class UserIdentity extends CUserIdentity
 
     public function authenticate()
     {
-        $record = User::model()->findByAttributes(array('username'=>$this->username));
+        $record = User::model()->findByAttributes(array('username'=>strtolower($this->username)));
 
         if($record === null)
             $this->errorCode=self::ERROR_USERNAME_INVALID;
@@ -21,7 +21,7 @@ class UserIdentity extends CUserIdentity
         {
             $this->_id = $record->id;
             $this->setState('username', $record->username );
-            $this->setState('group', $record->group );
+            $this->setState('role', $record->group );
             $this->setState('id', $record->id );
             $this->errorCode=self::ERROR_NONE;
         }

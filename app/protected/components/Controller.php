@@ -88,8 +88,4 @@ class Controller extends CController
         }
         Yii::app()->end();
     }
-
-    protected function isAdmin() {
-        return Yii::app()->user->group == 'ADMIN';
-    }
 }

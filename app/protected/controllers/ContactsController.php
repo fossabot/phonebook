@@ -12,6 +12,34 @@
  */
 class ContactsController extends Controller
 {
+    public function filters()
+    {
+        return array(
+            'accessControl',
+        );
+    }
+
+    /**
+     * Check access
+     * @return array
+     */
+    public function accessRules()
+    {
+        return array(
+            array('allow',
+                'actions'=>array('create','destroy','update'),
+                'roles'=>array('ADMIN'),
+            ),
+            array('allow',
+                'actions'=>array('items'),
+                'roles'=>array('USER'),
+            ),
+            array('deny',
+                'actions'=>array('create','destroy','update','items'),
+                'roles'=>array('GUEST'),
+            ),
+        );
+    }
     /**
      * Return list of contacts
      */
@@ -54,9 +82,6 @@ class ContactsController extends Controller
      */
     public function actionCreate()
     {
-        if ( !$this->isAdmin() ) {
-            return $this->failure();
-        }
         $params = $this->parseJSONRequest();
 
         unset($params['id']);
@@ -75,9 +100,6 @@ class ContactsController extends Controller
      */
     public function actionUpdate()
     {
-        if ( !$this->isAdmin() ) {
-            return $this->failure();
-        }
         $params = $this->parseJSONRequest();
 
 
@@ -93,9 +115,8 @@ class ContactsController extends Controller
      */
     public function actionDestroy()
     {
-        if ( !$this->isAdmin() ) {
-            return $this->failure();
-        }
+
+        var_dump( Yii::app()->user->checkAccess('USER') );
         $params = $this->parseJSONRequest();
 
         if ( empty($params['id']) ) {
